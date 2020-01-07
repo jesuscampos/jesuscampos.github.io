@@ -1,0 +1,19 @@
+---
+layout: post
+title: La importancia del encapsulamiento. Parte 2. Un ejemplo de encapsulamiento
+  en la vida real.
+date: '2017-10-16T02:58:00.000-07:00'
+author: Jesús
+tags:
+- Programación Orientada a Objetos
+- POO
+- C#
+- Propiedades
+- Modificadores de acceso
+- Encapsulamiento
+modified_time: '2017-12-06T03:14:28.426-08:00'
+blogger_id: tag:blogger.com,1999:blog-3773544929012013646.post-2668440064276343682
+blogger_orig_url: https://codigo418.blogspot.com/2017/12/la-importancia-del-encapsulamiento.html
+---
+
+<h2>Un ejemplo de encapsulamiento en la vida real</h2>Supongamos un taller de carpintería que fabrica muebles a medida. Por una parte tendríamos el propio taller, que sería la clase a encapsular. Por otra los clientes, que serían nuestros usuarios y representarían las clases que <b>USAN</b> la clase taller. Y por otra parte podríamos pensar en talleres filiales que representarían una especialización del taller matriz, es decir, clases que extienden al taller de carpintería y por lo tanto <b>SON</b> talleres. <br /><br />El taller cuenta con funcionalidades puestas al servicio de los clientes como la elaboración de presupuestos, consulta de catálogos, selección de tipo de madera, selección de color, etc. También cuenta con funcionalidades propias del taller como cortar, lijar, pintar, barnizar, ensamblar mueble, etc. <br /><br />Para la elaboración de los presupuestos el taller matriz cuenta con una tarifa de precios que sólo los talleres pueden acceder para poder elaborar los presupuestos. Esta tarifa la fija el taller matriz y ninguna filial puede modificarla. Por supuesto, esta tarifa es completamente inaccesible para los clientes: ni pueden ver los precios internos ni mucho menos modificarlos. <br /><br />Los presupuestos que se sirven a los clientes se confeccionan a través de la funcionalidad establecida para tal fin. Es decir, el cliente “solicita un presupuesto” y el taller, usando los precios internos y su lógica de negocio particular, confecciona un presupuesto y se lo presenta al cliente. Según el tipo de cliente podremos incluso establecer descuentos especiales, formas de pago personalizadas, acceso a colores corporativos exclusivos de un cliente, etc. <br /><br />Además, si fuéramos un cliente, no se nos ocurriría entrar en la carpintería y manipular nosotros mismos sus máquinas y herramientas. Está claro que hay funcionalidades que no son aptas al público, sino que son internas del propio taller. Para eso se diseña la interfaz. Sin embargo, una filial sí que debe tener acceso a este tipo de funcionalidades para poder fabricar muebles. La interfaz pública de la carpintería debería ser la justa y necesaria para comunicarse con sus clientes o con sus filiales. <br /><br />Como vemos existen dos perspectivas distintas para la visibilidad de una clase: la visibilidad desde el exterior de la clase, y la visibilidad por herencia.<br /><br /><a href="https://codigo418.blogspot.com/2017/12/la-importancia-del-encapsulamiento_6.html">&gt;&gt; Ir a Parte 3. Descriptores de acceso. Controlando la forma de acceder al estado.</a><br /><a href="https://codigo418.blogspot.com/2017/10/la-importancia-del-encapsulamiento.html">&lt;&lt; Volver a Parte 1. Introducción.</a>
