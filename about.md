@@ -9,6 +9,8 @@ published: true
 
 Mi nombre es Jesús Campos, aunque estudié ingeniería electrónica, desde muy pequeño me ha gustado la informática. Tanto que me he convertido en un estudiante perpetuo de las tecnologías de la información. Mi primer ordenador fue un Spectrum ZX de 48K y el segundo un Amstrad CPC 6128.
 
+![zxspectrum.png]({{site.baseurl}}/images/zxspectrum.png)
+![amstradcpc6128.png]({{site.baseurl}}/images/amstradcpc6128.png)
 
 
 Suelo trabajar desarrollando aplicaciones .Net pero me encanta todo lo relacionado con el mundo Devops y la arquitectura de software en general.
