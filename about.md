@@ -2,14 +2,15 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+Mi nombre es Jesús Campos, aunque estudié ingeniería electrónica me he convertido en un estudiante perpetuo de las tecnologías de la información. Suelo trabajar desarrollando aplicaciones .Net pero me encanta todo lo relacionado con el mundo Devops y la arquitectura de software en general.
 
-### More Information
+### El Blog
 
-A place to include any other types of information that you'd like to include about yourself.
+Inicio este blog con el fin de ordenar algunas cosas en mi cabeza y de paso lo hago público por si alguien puede obtener y/o aportar ideas.
 
-### Contact me
+### Contacto
 
 [email@domain.com](mailto:email@domain.com)
