@@ -18,7 +18,7 @@ Suelo trabajar desarrollando aplicaciones .Net pero me encanta todo lo relaciona
 
 ### El Blog
 
-Inicio este blog con el fin de ordenar algunos conceptos que tengo en mi cabeza y de paso lo hago público por si alguien puede obtener ideas, y por supuesto también aportarlas. No pretendo ser experto de nada, simplemente muestro mis experiencias 
+Inicio este blog con el fin de ordenar algunos conceptos que tengo en mi cabeza y de paso lo hago público por si alguien puede obtener ideas, y por supuesto también aportarlas.
 
 ### Contacto
 
