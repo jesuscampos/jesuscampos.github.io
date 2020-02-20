@@ -1,0 +1,19 @@
+---
+layout: post
+title: Método Main asíncrono disponible en C# 7.1
+date: '2018-05-01T04:32:00.003-07:00'
+author: Jesús
+tags:
+- Main
+- Asíncrono
+- async await
+- C# 7.1
+- C#
+- entrypoint
+modified_time: '2018-05-01T10:57:00.791-07:00'
+blogger_id: tag:blogger.com,1999:blog-3773544929012013646.post-8282270511240601628
+blogger_orig_url: https://codigo418.blogspot.com/2018/05/metodo-main-asincrono-disponible-en-c-71.html
+excerpt_separator: <!--more-->
+---
+
+<h1>Punto de entrada Main</h1>En <b>.Net</b> podemos crear programas con o sin un punto de entrada. Si tenemos un punto de entrada, el sistema operativo podrá cargar y ejecutar su código, y si no lo tenemos, el sistema operativo no podrá directamente ejecutar el programa, más bien será otro programa el que referencie nuestro código y sea él quien lo ejecute.<!--more--><br /><br />En C# definimos nuestro punto de entrada con un método <code>Main</code> declarado dentro de una clase o estructura no estática. Además, el método debe ser estático y no público. El valor devuelto puede ser <code>int</code> o <code>void</code>. De forma opcional se pueden especificar argumentos de entrada en forma de array de strings <code>string[]</code>. Así pues, estas son las posibles firmas que se pueden utilizar: <script src="https://gist.github.com/jesuscampos/7b152fd5972c4d4ab4a1ab75c4945979.js"></script> <h2>Punto de entrada asíncrono en C# 7.1</h2>Con la aparición de las palabras clave <a href="https://docs.microsoft.com/es-es/dotnet/csharp/async">async y await</a> para la creación de métodos asíncronos y su gran adopción por parte de la comunidad, se extiende la forma en que podemos crear nuestro punto de entrada para que sea compatible con esta característica. De esta forma la lista de firmas posibles para nuestro punto de entrada es ampliada con sus versiones asíncronas:<br /><script src="https://gist.github.com/jesuscampos/c8f24daf9b54543900ceb220c2f745c9.js"></script><br />Si por ejemplo creamos una aplicación de consola con un método <code>Main</code> síncrono que intente utilizar una Api asíncrona, como por ejemplo leer un archivo con un método <code>ReadAsync</code>, obtendremos un error de compilación:<br /><br /><script src="https://gist.github.com/jesuscampos/cd76b4de7eee3bdf295dbd64d5f14b4e.js"></script><command-line>El operador 'await' solo se puede usar dentro de un método asincrónico. Puede marcar este método con el modificador 'async' y cambiar su tipo de valor devuelto a 'Task'.</command-line><br />Sin embargo, si usamos una firma asíncrona del método <code>Main</code> desaparecerá el error de compilación y el método <code>ReadAsync</code> será invocado de forma asíncrona: <script src="https://gist.github.com/jesuscampos/0714db67c18539d7fb89222a268adb70.js"></script> <br /><h4>Nota sobre Visual Studio 2017 y C# 7.1</h4>Si intentamos lanzar el programa y obtenemos el siguiente error es porque estamos utilizando una versión de C# anterior a la C# 7.1 y no reconoce el método <code>Main</code> como válido: <command-line>El programa no contiene ningún método 'Main' estático adecuado para un punto de entrada</command-line> Aunque C# 7.1 está disponible con <b>Visual Studio 2017 Update 3</b>, sus nuevas funcionalidades no están disponibles por defecto. Tendremos que modificar la configuración del proyecto de forma manual. Esto lo podemos realizar abriendo las propiedades del proyecto, selecionando la pestaña Build, haciendo clic en el botón Advanced y seleccionando de la lista <b>C# 7.1</b>.
