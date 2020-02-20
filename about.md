@@ -5,6 +5,8 @@ permalink: /about/
 published: true
 ---
 
+### Yo
+
 Mi nombre es Jesús Campos, aunque estudié ingeniería electrónica me he convertido en un estudiante perpetuo de las tecnologías de la información. Suelo trabajar desarrollando aplicaciones .Net pero me encanta todo lo relacionado con el mundo Devops y la arquitectura de software en general.
 
 ### El Blog
