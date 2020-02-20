@@ -7,15 +7,12 @@ published: true
 
 ### Yo
 
-Mi nombre es Jesús Campos, aunque estudié ingeniería electrónica, desde muy pequeño me ha gustado la informática. Tanto que me he convertido en un estudiante perpetuo de las tecnologías de la información. Mi primer ordenador fue un Spectrum ZX de 48K y el segundo un Amstrad CPC 6128.
-
-Este fue mi primer ordenador, un Zx Spectrum:
-![zxspectrum.png]({{site.baseurl}}/images/zxspectrum.png)
-
-Y este el segundo, un Amstrad CPC 6128
-![amstradcpc6128.png]({{site.baseurl}}/images/amstradcpc6128.png)
+Mi nombre es Jesús Campos, aunque estudié ingeniería electrónica, desde muy pequeño me ha gustado la informática. Tanto que me he convertido en un estudiante perpetuo de las tecnologías de la información.
 
 Suelo trabajar desarrollando aplicaciones .Net pero me encanta todo lo relacionado con el mundo Devops y la arquitectura de software en general.
+
+Mi primer ordenador, un Zx Spectrum:
+![zxspectrum.png]({{site.baseurl}}/images/zxspectrum.png)
 
 ### El Blog
 
