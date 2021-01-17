@@ -54,7 +54,7 @@ Para el resto de los casos la petición es anónima ya que no será posible su aute
 ### Proceso de autenticación de una petición
 El siguiente diagrama muestra el funcionamiento básico del middleware y de como intenta realizar la autenticación, primero de forma remota, y si no lo consigue así, lo intentará usando el esquema por defecto de la aplicación.
 
-![AuthenticationMiddleware.png]({{site.baseurl}}/images/authentication-middleware.png)
+![_config.yml]({{site.baseurl}}/images/authentication-middleware.png)
 
 #### Primer intento: Autenticación remota
 **Es la autenticación que se produciría tras una redirección de login desde un proveedor de identidad externo.** (Caso I).

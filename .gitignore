@@ -9,3 +9,6 @@ Gemfile
 Gemfile.lock
 node_modules
 package.json
+/.vs/slnx.sqlite
+/.vs/jesuscampos.github.io/v16/TestStore/0/testlog.manifest
+/.vs/jesuscampos.github.io/v16/TestStore/0/000.testlog
